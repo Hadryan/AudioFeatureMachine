@@ -4,7 +4,7 @@ import { getParamValues } from "./auth";
 
 const RedirectPage = (props: any) => {
   useEffect(() => {
-    const { setExpiryTime, history, location } = props;
+    const { history, location } = props;
     try {
       if (_.isEmpty(location.hash)) {
         return history.push("/dashboard");

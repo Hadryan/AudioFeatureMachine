@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "../App";
-import Dashboard from "../Dashboard";
+import Dashboard from "../components/Dashboard";
 import RedirectPage from "../Redirect";
 
 const Router = () => {
