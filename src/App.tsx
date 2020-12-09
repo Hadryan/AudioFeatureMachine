@@ -1,5 +1,5 @@
-import "./App.css";
-import React from "react";
+import styles from './App.module.css';
+import Title from './assets/title.svg';
 
 const App = () => {
   const {
@@ -13,9 +13,17 @@ const App = () => {
   };
 
   return (
-    <button onClick={handleLogin} className="App">
-      login
-    </button>
+    <div className={styles.loginScreen}>
+      <div className={styles.loginContentContainer}>
+        <img src={Title} alt="title" className={styles.titleImage} />
+        <button onClick={handleLogin} className={styles.loginButton}>
+          Login
+        </button>
+      </div>
+      <div className={styles.creditBox}>
+        Design & Code by Ivo Dejanović
+      </div>
+    </div>
   );
 };
 

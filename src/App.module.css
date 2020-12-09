@@ -1,0 +1,41 @@
+.loginScreen {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blackRussian);
+  background-image: url('assets/waves.svg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.loginContentContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleImage {
+  max-width: 65vw;
+  margin-bottom: 32px;
+}
+
+.creditBox {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.loginButton {
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Mulish';
+  border-radius: 4px;
+  color: black;
+  background-color: var(--daquoise);
+  outline: none;
+}

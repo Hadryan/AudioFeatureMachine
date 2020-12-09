@@ -1,13 +1,15 @@
 :root {
   --blackRussian: #030917;
   --java: #02c2c6;
+  --forestGateau: #082d26;
+  --daquoise: #3bffa1
 }
 
 body {
   margin: 0;
   background-color: var(--blackRussian);
   color: white;
-  font-family: "Lato";
+  font-family: "Mulish";
 
 }
 
@@ -15,7 +17,3 @@ input {
   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
