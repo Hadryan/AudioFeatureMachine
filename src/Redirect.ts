@@ -7,7 +7,7 @@ const RedirectPage = (props: any) => {
     const { history, location } = props;
     try {
       if (_.isEmpty(location.hash)) {
-        return history.push("/dashboard");
+        return history.push("/");
       }
       const access_token = getParamValues(location.hash);
       const expiryTime = new Date().getTime() + access_token.expires_in * 1000;
