@@ -36,8 +36,6 @@ const Searchbar: React.FC = (): ReactElement => {
 
   return (
     <div className={styles.searchbarContainer}>
-      <h3>Spotify Comparison Tool</h3>
-      <label htmlFor="searchbar">Search for a track</label>
       <input
         type="text"
         className={styles.searchbar}

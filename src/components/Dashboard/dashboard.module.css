@@ -1,7 +1,7 @@
 .dashboard {
     display: grid;
     grid-template-columns: minmax(150px, 20%) 1fr;
-    grid-template-areas: sidebar content;
+    grid-template-areas: "sidebar content";
 }
 
 .sidebar {
