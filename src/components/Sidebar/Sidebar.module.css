@@ -1,0 +1,5 @@
+.sidebar {
+    height: 100vh;
+    background-color: var(--blackRRussian);
+    border-right: 1px solid gray;
+}

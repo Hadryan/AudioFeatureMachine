@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Searchbar from "../Searchbar";
-import styles from "./dashboard.module.css";
+import Sidebar from "../Sidebar";
+import styles from "./Dashboard.module.css";
 
 const Dashboard: React.FC = (): ReactElement => {
   return (
@@ -8,7 +9,9 @@ const Dashboard: React.FC = (): ReactElement => {
       <section className={styles.content}>
         <Searchbar />
       </section>
-      <section className={styles.sidebar}>sidebar</section>
+      <section className={styles.sidebar}>
+        <Sidebar />
+      </section>
     </main>
   );
 };
