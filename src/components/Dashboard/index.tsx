@@ -1,13 +1,15 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Searchbar from "../Searchbar";
-import styles from './dashboard.module.css'
+import styles from "./dashboard.module.css";
 
-const Dashboard = () => {
-
+const Dashboard: React.FC = (): ReactElement => {
   return (
-    <div className={styles.dashboard}>
-      <Searchbar />
-    </div>
+    <main className={styles.dashboard}>
+      <section className={styles.content}>
+        <Searchbar />
+      </section>
+      <section className={styles.sidebar}>sidebar</section>
+    </main>
   );
 };
 

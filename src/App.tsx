@@ -1,7 +1,8 @@
-import styles from './App.module.css';
-import Title from './assets/title.svg';
+import React, { ReactElement } from "react";
+import styles from "./App.module.css";
+import Title from "./assets/title.svg";
 
-const App = () => {
+const App: React.FC = (): ReactElement => {
   const {
     REACT_APP_CLIENT_ID,
     REACT_APP_AUTHORIZE_URL,
@@ -16,13 +17,15 @@ const App = () => {
     <div className={styles.loginScreen}>
       <div className={styles.loginContentContainer}>
         <img src={Title} alt="title" className={styles.titleImage} />
-        <button onClick={handleLogin} className={styles.loginButton}>
+        <button
+          type="button"
+          onClick={handleLogin}
+          className={styles.loginButton}
+        >
           Login
         </button>
       </div>
-      <div className={styles.creditBox}>
-        Design & Code by Ivo Dejanović
-      </div>
+      <div className={styles.creditBox}>Design & Code by Ivo Dejanović</div>
     </div>
   );
 };
