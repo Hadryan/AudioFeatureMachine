@@ -1,6 +1,6 @@
 .dashboard {
     display: grid;
-    grid-template-columns: minmax(150px, 20%) 1fr;
+    grid-template-columns: minmax(150px, 13%) 1fr;
     grid-template-areas: "sidebar content";
 }
 

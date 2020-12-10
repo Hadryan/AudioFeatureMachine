@@ -3,7 +3,7 @@
     place-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: var(--blackRussian);
+    background-color: var(--forestGateau);
     background-image: url('../../assets/waves.svg');
     background-attachment: fixed;
     background-position: bottom;
