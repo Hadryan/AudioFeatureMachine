@@ -1,9 +1,12 @@
 :root {
+  /* main body background color */
   --forestGateau: rgb(19, 22, 20);
-  --java: #02c2c6;
+  /* welcome screen & sidebar background color */
   --blackRussian: #171817;
+  /* sidebar button hover */
+  --greyRussian: #232423;
   --daquoise: #3bffa1;
-  --nimbus: #363636;
+  --nimbus: #c5c9cc;
 }
 
 body {
@@ -11,10 +14,12 @@ body {
   background-color: var(--blackRussian);
   color: white;
   font-family: "Mulish";
-
 }
 
 input {
   box-sizing: border-box;
 }
 
+.iconContainer {
+  margin-right: 4px;
+}
