@@ -8,9 +8,7 @@ const Searchbar: React.FC = (): ReactElement => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [foundTracks, setFoundTracks] = useState<any>([]);
 
-  useEffect(() => {
-    console.log(foundTracks);
-  });
+  useEffect(() => {}, [searchTerm]);
 
   const getSongs = async () => {
     setAuthHeader();
@@ -47,7 +45,16 @@ const Searchbar: React.FC = (): ReactElement => {
       <ul>
         {foundTracks.length > 0 &&
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          foundTracks.map((track: any) => <li key={track.id}>{track.name}</li>)}
+          foundTracks.map((track: any) => {
+            return (
+              <div key={track.id}>
+                <li>{track.name}</li>
+                {!!track.album.images[2] && (
+                  <img src={track.album.images[2].url} alt={track.name} />
+                )}
+              </div>
+            );
+          })}
       </ul>
     </div>
   );
